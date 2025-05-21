@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active:
+    - dev
+  application:
+    name: payment-gateway-api
+    version: 1.0.0
+
+

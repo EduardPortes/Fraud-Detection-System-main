@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "jwt.expiration",
+    "type": "java.lang.String",
+    "description": "Difines how long(in seconds) a JWT token remains valid before expiring"
+  },
+  {
+    "name": "jwt.private.key",
+    "type": "java.lang.String",
+    "description": "The private key used to verify JWT tokens"
+  },
+  {
+    "name": "jwt.public.key",
+    "type": "java.lang.String",
+    "description": "The public key used to verify JWT token signatures"
+  },
+  {
+    "name": "kafka.topic.name",
+    "type": "java.lang.String",
+    "description": "THe name of the Kafka topic used for messaging"
+  }
+]}
