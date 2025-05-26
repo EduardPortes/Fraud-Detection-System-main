@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -38,11 +40,12 @@ public class User implements Serializable{
     private String pass;
 
     @Column(name = "cardnumber")
-    private Long cardNumber;
+    private String cardNumber;
 
     @Column(name = "fraudscore")
     private Integer fraudScore; // Pontuação de risco (0 - 100)
-
+    
+    @JsonIgnore
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Transaction> transations = new ArrayList<>();
 

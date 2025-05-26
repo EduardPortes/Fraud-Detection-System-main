@@ -9,7 +9,7 @@ public class UserUtils {
         User user = new User();
         user.setName(userDto.getName());
         user.setPass(userDto.getPass());
-        user.setCardNumber(Long.parseLong(generateCardNumber()));
+        user.setCardNumber(generateCardNumber());
         user.setFraudScore(0);
         return user;
     }
